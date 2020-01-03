@@ -14,7 +14,7 @@ emailaddies = [] #list of email addresses you want to broadcast to as strings
 
 for addy in emailaddies:
 
-  conn.sendmail('virgilvanboye@gmail.com', addy, 'Subject: TESTING....\n\nDear Charles,\nSo long, and thanks for all the memes.\n\n-Charles')
+  conn.sendmail(senderemail, addy, 'Subject: TESTING....\n\nDear Charles,\nSo long, and thanks for all the memes.\n\n-Charles')
   #type in sender email as string, edit the subject and body of the email
 
 conn.quit()
